@@ -27,7 +27,7 @@ function Navbar() {
             <a href="#">Reviews</a>
           </li>
           <li class="link">
-            <a href="../Sign_Up//Sign_Up.html">
+            <a href="../Sign_Up/Sign_Up.html">
               <button class="btn1">Sign Up</button>
             </a>
           </li>
