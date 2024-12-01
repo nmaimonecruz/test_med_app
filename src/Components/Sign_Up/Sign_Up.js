@@ -47,6 +47,7 @@ function Sign_Up() {
         </div>
     </div>
 
-)};
+);
+}
 
 export default Sign_Up;
