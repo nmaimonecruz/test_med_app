@@ -1,19 +1,18 @@
 // Import necessary modules from React library
 // Import components for routing from react-router-dom library
 // Import custom Navbar component
-import Navbar from './Components/Navbar/Navbar';
+import Navbar from './Navbar.js';
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Landing_Page from './Components/Landing_Page/Landing_Page';
-import Login from './Components/Login/Login';
-import Sign_Up from './Components/Sign_Up/Sign_Up';
+import Landing_Page from './Landing_Page.js';
+import Login from './Login.js';
+import Sign_Up from './Sign_Up.js';
 
 function App() {
-
     return (
         <div className="App">
             <BrowserRouter>
-              <Navbar/>
+              <Navbar />
                   <Routes>
                     <Route path="/" element={<Landing_Page/>}/>
                     <Route path="/signup" element={<Sign_Up/>}/>
