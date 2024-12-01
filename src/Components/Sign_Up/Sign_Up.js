@@ -2,7 +2,7 @@ import "./Sign_Up.css";
 
 function Sign_Up() {
     return (
-            <div className="container" style="margin-top: 5%;">
+            <div className="container" style={{margin-top: "5%"}}> //example updated for future reference NINA LOOK HERE
         <div className="signup-grid">
             <div className="signup-text" style="text-align: left;">
                 <h1>Sign Up</h1>
