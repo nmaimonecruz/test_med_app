@@ -1,14 +1,16 @@
+import Login from "../Login/Login";
 import "./Sign_Up.css";
+import { Link } from 'react-router-dom';
 
 function Sign_Up() {
     return (
-            <div className="container" style={{margin-top: "5%"}}> //example updated for future reference NINA LOOK HERE
+            <div className="container" style={{marginTop: '5%'}}>
         <div className="signup-grid">
-            <div className="signup-text" style="text-align: left;">
+            <div className="signup-text" style={{textAlign: 'left'}}>
                 <h1>Sign Up</h1>
             </div>
-            <div className="signup-text1" style="text-align: left;">
-                Already a member? <span><a href="../Login/Login.html" style="color: #2190FF;"> Login</a></span>
+            <div className="signup-text1" style={{textAlign: 'left'}}>
+                Already a member? <span><Link to="/Login" exact compnent={Login}  style={{color: '#2190FF'}}> Login</Link></span>
             </div>
             <div className="signup-form">
                 <form>
@@ -37,7 +39,7 @@ function Sign_Up() {
                         <input name="password" id="password" required className="form-control" placeholder="Enter your password" aria-describedby="helpId" />
                     </div>
 
-                    <div className="btn-group" style="align-content: center;"> 
+                    <div className="btn-group" style={{alignContent: 'center'}}> 
                         <button type="submit" className="btn btn-primary mb-2 mr-1 waves-effect waves-light">Submit</button> 
                         <br></br>
                         <button type="reset" className="btn btn-danger mb-2 waves-effect waves-light">Reset</button> 

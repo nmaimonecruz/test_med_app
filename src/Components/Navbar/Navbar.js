@@ -1,5 +1,10 @@
 import "./Navbar.css";
 
+import Landing_Page from '../Landing_Page/Landing_Page.js';
+import Login from '../Login/Login';
+import Sign_Up from '../Sign_Up/Sign_Up';
+import { Link } from 'react-router-dom';
+
 function Navbar() {
     return (
        <nav>
@@ -15,7 +20,7 @@ function Navbar() {
 
         <ul className="nav__links active">
           <li className="link">
-            <a href="../Landing_Page/LandingPage.html">Home</a>
+            <Link to="/Landing_Page" exact component={Landing_Page}> Home </Link> 
           </li>
           <li className="link">
             <a href="#">Health Blog</a>
@@ -27,14 +32,14 @@ function Navbar() {
             <a href="#">Reviews</a>
           </li>
           <li className="link">
-            <a href="../Sign_Up/Sign_Up.html">
+           <Link to="/Sign_Up" exact component={Sign_Up}>
               <button className="btn1">Sign Up</button>
-            </a>
+            </Link>
           </li>
           <li className="link">
-            <a href="../Login/Login.html">
+           <Link to="/Login" exact component={Login}>
               <button className="btn1">Login</button>
-            </a>
+            </Link>
           </li>
         </ul>
     </nav>
