@@ -2,14 +2,14 @@ import "./Navbar.css";
 
 function Navbar() {
     return (
-    <nav>
+       <nav>
         <div className="nav__logo">
           <a href="/">
             StayHealthy Inc.
           </a>
           <span>.</span>
         </div>
-        <div className="nav__icon" onClick={"handleClick"}>
+        <div className="nav__icon">
           <i className="fa fa-times fa fa-bars"></i>
         </div>
 

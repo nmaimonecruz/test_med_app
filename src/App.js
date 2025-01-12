@@ -1,28 +1,32 @@
 // Import necessary modules from React library
-// Import components for routing from react-router-dom library
-// Import custom Navbar component
-import Navbar from './Navbar.js';
-import "./App.css";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import Landing_Page from './Landing_Page.js';
-import Login from './Login.js';
-import Sign_Up from './Sign_Up.js';
+import React, { useEffect } from 'react';
 
+// Import components for routing from react-router-dom library
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+// Import custom Navbar component
+import Navbar from './Components/Navbar/Navbar';
+import Landing_Page from './Components/Landing_Page/Landing_Page';
+
+// Function component for the main App
 function App() {
+
+  // Render the main App component
   return (
-    <div> 
-	  <nav>
-      <Link to="/" className="nav-item">Landing_Page</Link>
-        <Link to="/about" className="nav-item">Sign_Up</Link>
-        <Link to="/contact" className="nav-item">Login</Link>
-	  </nav>
-      <Routes> 
-        <Route path="/" element={Landing_Page />}></Route>
-        <Route path="/signup" element={<Sign_Up />}></Route>
-        <Route path="/login" element={<Login />}></Route>
-      </Routes>
+    <div className="App">
+        {/* Set up BrowserRouter for routing */}
+        <BrowserRouter>
+          {/* Display the Navbar component */}
+          <Navbar/>
+
+          {/* Set up the Routes for different pages */}
+          <Routes>
+            <Route path="/" element={<Landing_Page/>}/>
+          </Routes>
+        </BrowserRouter>
     </div>
   );
-};
+}
 
+// Export the App component as the default export
 export default App;
