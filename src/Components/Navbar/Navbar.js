@@ -1,6 +1,7 @@
 import "./Navbar.css";
 
 import Landing_Page from '../Landing_Page/Landing_Page.js';
+import InstantConsultation from '../InstantConsultation/InstantConsultation';
 import Login from '../Login/Login';
 import Sign_Up from '../Sign_Up/Sign_Up';
 import { Link } from 'react-router-dom';
@@ -24,6 +25,9 @@ function Navbar() {
           </li>
           <li className="link">
             <a href="#">Health Blog</a>
+          </li>
+          <li className="link">
+           <Link to="/InstantConsultation" exact component={InstantConsultation}> Instant Consultation </Link>
           </li>
           <li className="link">
             <a href="#">Appointments</a>
