@@ -21,7 +21,7 @@ function Navbar() {
 
         <ul className="nav__links active">
           <li className="link">
-            <Link to="/Landing_Page" exact component={Landing_Page}> Home </Link> 
+            <Link to="/" exact component={Landing_Page}> Home </Link> 
           </li>
           <li className="link">
             <a href="#">Health Blog</a>
